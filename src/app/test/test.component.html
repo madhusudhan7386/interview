@@ -1,0 +1,23 @@
+<table class="table">
+
+    <thead>
+        <tr>
+            <!-- <th> projectName</th>
+            <th>projectCode</th> -->
+        </tr>
+        <tr *ngFor="let user of userList">
+            <td>{{user.projectName}}</td>
+            <td>{{user.projectCode}}</td>
+            <td>{{user.employee[0].title}}{{user.employee[0].name}}</td>
+            <td>{{user.employee[0].salary}}</td>
+            <td>{{user.employee.id}}</td>
+            
+
+
+    </tr>
+    </thead>
+</table>
+
+
+
+<!-- {{userList|json}} -->
